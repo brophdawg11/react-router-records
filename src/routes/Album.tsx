@@ -14,7 +14,7 @@ type AlbumWithTracks = {
 
 export async function loader({ params }: LoaderFunctionArgs) {
   // TODO: Fix synchronous navigations
-  await new Promise((r) => setTimeout(r, 100));
+  await new Promise((r) => setTimeout(r, 1));
   const { default: album }: { default: AlbumWithTracks } = await import(
     `../data/album-${params.id}.json`
   );

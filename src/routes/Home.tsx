@@ -3,7 +3,7 @@ import { Card } from "../components/Card";
 
 export async function loader() {
   // TODO: Fix synchronous navigations
-  await new Promise((r) => setTimeout(r, 100));
+  await new Promise((r) => setTimeout(r, 1));
   const { default: albums } = await import("../data/albums.json");
   return albums;
 }
