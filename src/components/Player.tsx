@@ -56,7 +56,7 @@ export default function Player() {
   React.useEffect(() => {
     if (!audioPlayer.current) return;
     const newIndex = (songIndex % MAX_SONGS) + 1;
-    audioPlayer.current.src = `/mp3/song${newIndex}.mp3`;
+    audioPlayer.current.src = `/react-router-records/mp3/song${newIndex}.mp3`;
     audioPlayer.current.currentTime = 0;
     audioPlayer.current.play();
     setSongIndex(newIndex);
@@ -106,7 +106,7 @@ export default function Player() {
             {currentTrack.artist}
           </p>
         </div>
-        <audio ref={audioPlayer} src="/mp3/song1.mp3" />
+        <audio ref={audioPlayer} src="/react-router-records/mp3/song1.mp3" />
         <div className="flex gap-6 items-center text-black">
           <svg
             xmlns="http://www.w3.org/2000/svg"
