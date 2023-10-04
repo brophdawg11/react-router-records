@@ -24,10 +24,10 @@ export function Card({ id, name, artist, imageUrl }: CardProps) {
             height="400"
           />
           <img
-            src="/react-router-records/vynil-lp.webp"
+            src="/react-router-records/vinyl-lp.webp"
             width="400"
             height="400"
-            className="absolute top-0 opacity-0 vynil-image c-card--vinyl"
+            className="absolute top-0 opacity-0 vinyl-image c-card--vinyl"
           />
         </div>
         <p className="pt-4 font-semibold">{name}</p>

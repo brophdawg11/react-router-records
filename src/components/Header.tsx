@@ -9,6 +9,7 @@ export default function Header() {
             className="flex items-center tracking-tight no-underline hover:no-underline font-bold text-black text-xl"
             to="/"
             unstable_viewTransition
+            style={{ viewTransitionName: "header" }}
           >
             <svg
               width="30"

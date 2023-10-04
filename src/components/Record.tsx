@@ -11,8 +11,8 @@ export default function Record({ albumId, title, imageUrl }: RecordProps) {
   let { isPlaying, currentTrack } = React.useContext(PlayerContext);
   const isPlayingCurrentRecord = isPlaying && currentTrack?.albumId === albumId;
   const animationClass = isPlayingCurrentRecord
-    ? "vynil-animation-in-spinning"
-    : "vynil-animation-in";
+    ? "vinyl-animation-in-spinning"
+    : "vinyl-animation-in";
 
   return (
     <div className="relative shadow-xl mr-32 w-72 md:w-auto c-record">
@@ -24,10 +24,10 @@ export default function Record({ albumId, title, imageUrl }: RecordProps) {
         className="block rounded-md tag-album-cover relative z-10 bg-white c-record--album"
       />
       <img
-        src="/vynil-lp.webp"
+        src="/react-router-records/vinyl-lp.webp"
         width="400"
         height="400"
-        className={`absolute top-0 opacity-0 vynil-image c-record--vinyl ${animationClass}`}
+        className={`absolute top-0 opacity-0 vinyl-image c-record--vinyl ${animationClass}`}
       />
     </div>
   );
