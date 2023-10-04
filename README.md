@@ -1,8 +1,10 @@
 # React Router View Transitions Demo
 
-This is a fork of the awesome [Astro View Transitions](https://github.com/Charca/astro-records) Demo that is converted to use React Router's view transition APIs.
+## ❤️ Credits
 
-### 👉🏽 [Live Demo](https://brophdawg11.github.io/react-router-records/)
+This is a fork of the awesome [Astro Records](https://github.com/Charca/astro-records) Demo (using Astro's view transition support) that has been converted to use React Router's view transition APIs.
+
+## 👉🏽 [Live Demo](https://brophdawg11.github.io/react-router-records/)
 
 ![Screenshot](./screenshot.png)
 
