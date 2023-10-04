@@ -4,7 +4,7 @@ This is a fork of the awesome [Astro View Transitions](https://github.com/Charca
 
 ### 👉🏽 Live Demo (🛠️ coming soon)
 
-Screenshot (🛠️ coming soon)
+![Screenshot](./screenshot.png)
 
 ## 🚀 Getting Started
 
