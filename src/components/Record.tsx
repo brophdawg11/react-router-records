@@ -1,37 +1,34 @@
-import { isPlaying, currentTrack } from './state'
+import React from "react";
+import { PlayerContext } from "../routes/Layout";
 
-export default function Record({
-  albumId,
-  title,
-  imageUrl,
-}: {
-  albumId: string
-  title: string
-  imageUrl: string
-}) {
-  const isPlayingCurrentRecord =
-    isPlaying.value && currentTrack.value.albumId === albumId
-  const className =
-    'absolute top-0 opacity-0 vynil-image vynil-animation-in' +
-    (isPlayingCurrentRecord ? '-spinning' : '')
+type RecordProps = {
+  albumId: string;
+  title: string;
+  imageUrl: string;
+};
+
+export default function Record({ albumId, title, imageUrl }: RecordProps) {
+  let { isPlaying, currentTrack } = React.useContext(PlayerContext);
+  const isPlayingCurrentRecord = isPlaying && currentTrack?.albumId === albumId;
+  const animationClass = isPlayingCurrentRecord
+    ? "vynil-animation-in-spinning"
+    : "vynil-animation-in";
 
   return (
-    <div class="relative shadow-xl mr-32 w-72 md:w-auto">
+    <div className="relative shadow-xl mr-32 w-72 md:w-auto c-record">
       <img
         src={imageUrl}
         alt={title}
         width="400"
         height="400"
-        class="block rounded-md tag-album-cover relative z-10 bg-white"
-        style={`view-transition-name: record-${albumId};`}
+        className="block rounded-md tag-album-cover relative z-10 bg-white c-record--album"
       />
       <img
         src="/vynil-lp.webp"
         width="400"
         height="400"
-        class={className}
-        style={`view-transition-name: vinyl-${albumId};`}
+        className={`absolute top-0 opacity-0 vynil-image c-record--vinyl ${animationClass}`}
       />
     </div>
-  )
+  );
 }
