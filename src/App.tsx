@@ -9,24 +9,29 @@ import {
   loader as albumLoader,
 } from "./routes/Album";
 
-let router = createBrowserRouter([
+let router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      Component: Layout,
+      children: [
+        {
+          index: true,
+          loader: homeLoader,
+          Component: HomeComponent,
+        },
+        {
+          path: "album/:id",
+          loader: albumLoader,
+          Component: AlbumComponent,
+        },
+      ],
+    },
+  ],
   {
-    path: "/",
-    Component: Layout,
-    children: [
-      {
-        index: true,
-        loader: homeLoader,
-        Component: HomeComponent,
-      },
-      {
-        path: "album/:id",
-        loader: albumLoader,
-        Component: AlbumComponent,
-      },
-    ],
-  },
-]);
+    basename: "/react-router-records",
+  }
+);
 
 export default function App() {
   return <RouterProvider router={router} />;
