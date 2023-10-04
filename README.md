@@ -2,7 +2,7 @@
 
 This is a fork of the awesome [Astro View Transitions](https://github.com/Charca/astro-records) Demo that is converted to use React Router's view transition APIs.
 
-### 👉🏽 Live Demo (🛠️ coming soon)
+### 👉🏽 [Live Demo](https://brophdawg11.github.io/react-router-records/)
 
 ![Screenshot](./screenshot.png)
 
