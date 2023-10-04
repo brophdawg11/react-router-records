@@ -19,9 +19,9 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="underline"
                 >
-                  Astro version
+                  Astro Records
                 </a>{" "}
-                of this demo 🙌
+                demo which this is based on 🙌
               </p>
               <p className="pt-4">
                 Made with ❤️ by{" "}
