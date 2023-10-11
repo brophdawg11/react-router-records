@@ -34,6 +34,16 @@ export default function Footer() {
                   Matt Brophy
                 </a>
               </p>
+              <p className="pt-4">
+                <a
+                  href="https://github.com/brophdawg11/react-router-records"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline"
+                >
+                  Source Code
+                </a>
+              </p>
             </div>
           </div>
         </div>
