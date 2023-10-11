@@ -32,17 +32,17 @@ export default function Footer() {
                   className="underline"
                 >
                   Matt Brophy
-                </a>
-              </p>
-              <p className="pt-4">
+                </a>{" "}
+                (
                 <a
                   href="https://github.com/brophdawg11/react-router-records"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="underline"
                 >
-                  Source Code
+                  Github Repo
                 </a>
+                )
               </p>
             </div>
           </div>
