@@ -34,7 +34,7 @@ export default function PlayButton({
             imageUrl,
           });
 
-          setIsPlaying(!isPlaying);
+          setIsPlaying(true);
         }
       }}
     >
